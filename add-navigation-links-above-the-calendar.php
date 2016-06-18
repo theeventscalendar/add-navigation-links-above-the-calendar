@@ -10,9 +10,9 @@
  
 defined( 'WPINC' ) or die;
 
-add_action( 'wp_head', 'tribe_show_prev_next_links_on_top' );
+add_action( 'wp_head', 'tribe_add_navigation_links_above_the_calendar' );
 
-function tribe_show_prev_next_links_on_top() {
+function tribe_add_navigation_links_above_the_calendar() {
 
 	if ( ! tribe_is_event_query() ) {
 		return;
